@@ -3,7 +3,7 @@
 Permanently pursue the highest education.
 Read through each subject, test your knowledge and receive a certificate.
 Gather enough certificates to complete a course.
-
+Get a NFT diploma upon payment.
 ## Planned courses
 
 - [civil-engineering](courses/civil-engineering.md)
