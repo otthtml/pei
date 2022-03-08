@@ -2,4 +2,4 @@
 
 ## Subject requirements:
 
-[[mathematics-for-computer-science]]
+- [mathematics-for-computer-science](../subjects/mathematics-for-computer-science.md)

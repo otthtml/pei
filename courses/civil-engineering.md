@@ -1,3 +1,3 @@
-# Permanent Education Institute
+# Civil Engineering
 
-Permanently pursue the highest education.
+## Subject requirements:
