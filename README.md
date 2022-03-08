@@ -11,3 +11,14 @@ Gather enough certificates to complete a course.
 - [electrical-engineering](courses/electrical-engineering.md)
 - [materials-science](courses/materials-science.md)
 - [mathematics](courses/mathematics.md)
+
+
+## Cool features to use
+
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
