@@ -22,3 +22,9 @@ Gather enough certificates to complete a course.
       B-->D;
       C-->D;
 ```
+
+Math equations might only work on GitLab?!
+
+```math
+\tag{1} a^2+b^2=c^2
+```
