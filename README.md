@@ -3,18 +3,21 @@
 Permanently pursue the highest education.  
 Read through each subject, test your knowledge and receive a certificate.  
 Gather enough certificates to complete a course.  
+Each course consists of 10 certificates.  
 Get a NFT diploma upon payment.  
 
 ## Planned courses
 
-- [civil-engineering](courses/civil-engineering.md)
-- [computer-science](courses/computer-science.md)
-- [electrical-engineering](courses/electrical-engineering.md)
-- [materials-science](courses/materials-science.md)
-- [mathematics](courses/mathematics.md)
+- [Civil Engineering](courses/civil-engineering.md)
+- [Computer Science](courses/computer-science.md)
+- [Electrical Engineering](courses/electrical-engineering.md)
+- [Materials Science](courses/materials-science.md)
+- [Mathematics](courses/mathematics.md)
 
 
 ## Cool features to use
+
+### Mermaid
 
 ```mermaid
   graph TD;
@@ -24,7 +27,7 @@ Get a NFT diploma upon payment.
       C-->D;
 ```
 
-Math equations might only work on GitLab?!
+### Math equations (might only work on GitLab)
 
 ```math
 \tag{1} a^2+b^2=c^2
