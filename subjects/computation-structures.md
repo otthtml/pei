@@ -1,1 +1,9 @@
 # Computation Structures
+
+This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-004-computation-structures-spring-2017/index.htm.
+
+## Basics of information
+
+0. It's any data that manages to reduce uncertainty.
+1. Different pieces of data reduce uncertainty by different amounts. More reduction equals more information conveyed.
+2. In 1948, Claude Shannon tried to quantify information
