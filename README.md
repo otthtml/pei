@@ -39,8 +39,8 @@ $`H(x) = \sum_{i=1}^{n} p_{i} * log_{2}(1/p_{i})`$
 
 ~I take that back~  
 That is so funny! :joy: 
+@@ test
 > this is a quote  
-{+ Just regular text +}  
 
 Here is a simple footnote[^1].  
 
