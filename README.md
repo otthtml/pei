@@ -15,7 +15,7 @@ Get a NFT diploma upon payment.
 - [Mathematics](courses/mathematics.md)
 
 
-## Cool features to use
+## Cool Markdown features to use
 
 ### Mermaid
 
@@ -35,7 +35,7 @@ Get a NFT diploma upon payment.
 
 $`H(x) = \sum_{i=1}^{n} p_{i} * log_{2}(1/p_{i})`$
 
-### Markdown formatting
+### Generic formatting
 
 ~I take that back~  
 That is so funny! :joy:  
