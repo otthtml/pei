@@ -17,8 +17,6 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 5. Similarly, the entropy H(x) is the average amount of information contained in each piece of data received about the value x. That is, H(x) = sum(p<sub>i</sub> * I(x<sub>i</sub>)).
 6. In this case, entropy is a guideline. In a sequence of data about certain values, we need to be as close as possible to entropy. If the bits used are lower, we won't be describing it properly. If the bits used are higher, we're being inefficient.
 
-$`H(x) = \sum_{i=1}^{n} p_{i} * log_{2}(1/p_{i}`$
-
 
 ## The Digital Abstraction
 

@@ -33,3 +33,4 @@ Get a NFT diploma upon payment.
 \tag{1} a^2+b^2=c^2
 ```
 
+$`H(x) = \sum_{i=1}^{n} p_{i} * log_{2}(1/p_{i})`$
