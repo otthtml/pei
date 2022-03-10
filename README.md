@@ -48,6 +48,6 @@ Here is a simple footnote[^1].
 ### Code
 
 ```python
-def hello_world():
+def hello_python():
   print('heeey')
 ```
