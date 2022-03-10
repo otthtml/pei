@@ -9,5 +9,5 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 2. In 1948, Claude Shannon tried to quantify information as I(x<sub>i</sub>) = log<sub>2</sub>(1/p<sub>i</sub>)
 
 ```math
-\tag{1} I($x_i$) = $log_2$(1/$p_i$)
+    I(x<sub>i</sub>) = log<sub>2</sub>(1/p<sub>i</sub>)
 ```
