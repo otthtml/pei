@@ -17,7 +17,7 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 5. Similarly, the entropy H(x) is the average amount of information contained in each piece of data received about the value x. That is, H(x) = E(I(x)) = 
 
 ```math
-\tag{1} \[ \sum_{n=1}^{\infty} 2^{-n} = 1 \]
+\tag{1} $\[ \sum_{n=1}^{\infty} 2^{-n} = 1 \]$
 ```
 
 ## The Digital Abstraction
