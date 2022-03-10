@@ -37,7 +37,10 @@ $`H(x) = \sum_{i=1}^{n} p_{i} * log_{2}(1/p_{i})`$
 
 ### Markdown formatting
 
-H~2~O  
-X^2^  
-That is so funny! :joy:  
-I need to highlight these ==very important words==.  
+~I take that back~
+That is so funny! :joy: 
+> this is a quote
+
+Here is a simple footnote[^1].
+
+[^1]: My reference.
