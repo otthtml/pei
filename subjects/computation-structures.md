@@ -28,10 +28,10 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 graph TB;
     A((start))-->B((0))
     A-->C((1));
-    B-->E((0))
-    B-->F((1))
-    C-->H((0))
-    C-->I((1))
+    B-->E((0 A))
+    B-->F((1 B))
+    C-->H((0 C))
+    C-->I((1 D))
 ```
 10. If all choices are equally likely, then a fixed-length encoding is often used. This encoding generates a perfect binary tree.
 
