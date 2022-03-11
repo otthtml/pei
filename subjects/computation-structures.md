@@ -26,7 +26,7 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 1. You can also use binary trees to represent encoding:
 ```mermaid
 graph TB;
-    A((1))-->B((2))
+    A((Z))-->B((2))
     A-->C((3));
     B-->E((4))
     B-->F((5))
