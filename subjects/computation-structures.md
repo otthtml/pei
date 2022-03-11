@@ -17,11 +17,13 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 5. Similarly, the entropy H(x) is the average amount of information contained in each piece of data received about the value x. That is, **H(x) = sum(p<sub>i</sub> * I(x<sub>i</sub>))**.
 6. In this case, entropy is a guideline. In a sequence of data about certain values, we need to be as close as possible to entropy. If the bits used are lower, we won't be describing it properly. If the bits used are higher, we're being inefficient.
 7. Encodings: unambiguous mapping between bit strings and a set of possible data. Similar to the thing we did with the card suits. There's variable-length encoding and fixed-length encoding.
-8. You can use tables to represent encoding, such as:
+8. You can use tables to represent encoding, such as:  
+
 | A  | B  | C  | D  |
 |----|----|----|----|
 | 00 | 01 | 10 | 11 |
-9. You can also use binary trees to represent encoding:
+
+1. You can also use binary trees to represent encoding:
 ```mermaid
 graph TB;
     A((1))-->B((2))
@@ -31,7 +33,7 @@ graph TB;
     C-->H((6))
     C-->I((7))
 ```
-
+10. If all choices are equally likely, then a fixed-length encoding is often used. This encoding generates a perfect binary tree.
 
 
 ## The Digital Abstraction
