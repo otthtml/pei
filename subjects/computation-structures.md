@@ -23,17 +23,17 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 |----|----|----|----|
 | 00 | 01 | 10 | 11 |
 
-1. You can also use binary trees to represent encoding:
+9. You can also use binary trees to represent encoding:
 ```mermaid
 graph TB;
-    A((start))-->B((0))
-    A-->C((1));
-    B-->E((0 A))
-    B-->F((1 B))
-    C-->H((0 C))
-    C-->I((1 D))
+    A[ ]--0---B[ ]
+    A--1---C[ ];
+    B--0---E(A)
+    B--1---F(B)
+    C--0---H(C)
+    C--1---I(D)
 ```
-10. If all choices are equally likely, then a fixed-length encoding is often used. This encoding generates a perfect binary tree.
+10.  If all choices are equally likely, then a fixed-length encoding is often used. This encoding generates a perfect binary tree.
 
 
 ## The Digital Abstraction
