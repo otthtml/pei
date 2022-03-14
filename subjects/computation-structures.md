@@ -39,15 +39,25 @@ graph TB;
     C--1---I(D)
 ```
 10.  If all choices are equally likely, then a fixed-length encoding is often used. This encoding generates a perfect binary tree, where all leaves are the same distance from the root (like the example above).
-11.  In such case, since p<sub>i</sub> = 1/N (where N is the number of choices), entropy is defined as sum(1/N * log<sub>2</sub>(1/(1/N))), which is just log<sub>2</sub>N.
+11.  In such case, since **p<sub>i</sub> = 1/N** (where N is the number of choices), entropy is defined as **sum(1/N * log<sub>2</sub>(1/(1/N)))**, which is just **log<sub>2</sub>N**.
 12.  Say we want to encode the numbers 0 through 9. That's 10 possible choices. The entropy says that we need log<sub>2</sub>10 to encode it. That is 3.32 bits, rounding up to 4 bits, which is correct! 9 is represented as 1001 in binary. Note that we need 4 bits minimum, but 4 bits can represent up to 16 values (2<sup>4</sup>)
-13.  Thus, unsigned integers have a range of 0 -> 2<sup>N</sup> - 1, where N is the number of bits allocated.
-14.  Similarly, signed integers waste one bit to represent the sign, so generally they have a range of -2<sup>N-1</sup> - 1 -> 2<sup>N-1</sup> - 1. However this type of encoding allows for two keys to represent the same value (0). Eg. when N = 2, 10 = -0 and 00 = +0!
-15.  Two's complement encoding solves this by attributing the highest order bit a negative weight. The result is that, when N = 2, 11 is -(2<sup>1</sup>) + 2<sup>0</sup> = -1. As an example, 10 = -2, 11 = -1, 00 = 0 and 01 = 1.
-16.  Finding the negative value of A in 2's complement encoding is more complex as well. You basically negate A (known as find A's complement) and add 1 to it. Eg. when N = 3, say A = 2 = 010. So ~A = 101, 101 + 001 = 110. Just to check, 110 is -(2<sup>2</sup>) + 2<sup>1</sup> = -4 + 2 = -2! Hurray!
-17.  How did we arrive at this formula? A - A = 1 - 1, -A = 1 + (- 1 - A). Finally, -A = 1 + ~A (complement of A).
+13.  Thus, unsigned integers have a range of **0 -> 2<sup>N</sup> - 1**, where N is the number of bits allocated.
+14.  Similarly, signed integers waste one bit to represent the sign, so generally they have a range of **-2<sup>N-1</sup> - 1 -> 2<sup>N-1</sup> - 1**. However this type of encoding allows for two keys to represent the same value (0). Eg. when N = 2, 10 = -0 and 00 = +0!
+15.  Two's complement encoding solves this by attributing the highest order bit a negative weight. The result is that, when N = 2, **11 is -(2<sup>1</sup>) + 2<sup>0</sup> = -1**. As an example, 10 = -2, 11 = -1, 00 = 0 and 01 = 1.
+16.  Finding the negative value of A in 2's complement encoding is more complex as well. You basically negate A (known as find A's complement) and add 1 to it. Eg. when N = 3, say **A = 2 = 010**. So **~A = 101, 101 + 001 = 110**. Just to check, 110 is **-(2<sup>2</sup>) + 2<sup>1</sup> = -4 + 2 = -2**! Hurray!
+17.  How did we arrive at this formula? **A - A = 1 - 1, -A = 1 + (- 1 - A)**. Finally, **-A = 1 + ~A** (complement of A).
 18.  Examples of fixed-length encoding include ASCII and hexadecimal notation (where 4 bits represent one symbol from 0 to F).
 19.  Encodings such as the hexadecimal allow us to compress data, effectively reducing space consumption (but increasing time consumption in the encoding and decoding process).
+20.  Variable-length encodings are used when probabilities are irregular. In such cases, low information represent high probabilities and vice-versa, according to Shannon's law (item 3). For instance:  
+
+| choice | p    | encoding |
+|--------|------|----------|
+| A      | 1/3  | 11       |
+| B      | 1/2  | 0        |
+| C      | 1/12 | 100      |
+| D      | 1/12 | 101      |
+
+21. The encoding above has an entropy of 1.626, which is more efficient than a fixed-length encoding in this case (which would have an entropy of 2).
 
 
 ## The Digital Abstraction
