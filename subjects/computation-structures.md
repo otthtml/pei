@@ -57,8 +57,8 @@ graph TB;
 | C      | 1/12 | 100      |
 | D      | 1/12 | 101      |
 
-21. The encoding above has an entropy of 1.626, which is more efficient than a fixed-length encoding in this case (which would have an entropy of 2).
-
+21. The encoding above has an expected length of 1.667, which is more efficient than a fixed-length encoding in this case (which would have an entropy of 2).
+22. Note that the expected length is 1.667, but given the probabilities, the entropy (lower bound) is 1.626. So there must be another encoding that's more efficient.
 
 ## The Digital Abstraction
 
