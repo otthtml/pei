@@ -59,6 +59,20 @@ graph TB;
 
 21. The encoding above has an expected length of 1.667, which is more efficient than a fixed-length encoding in this case (which would have an entropy of 2).
 22. Note that the expected length is 1.667, but given the probabilities, the entropy (lower bound) is 1.626. So there must be another encoding that's more efficient.
+23. To find the optimal encoding, we can use Huffman's Algorithm. Just build the binary tree from the ground, choosing the lowest probabilities, combining them and repeating until you reach probability = 1. Using the table in item 20, we get:
+```mermaid
+graph TB;
+    A[p=1]--0---B[B, p=1/2]
+    A--1---C[p=1/2];
+    C--0---H[p=1/6]
+    C--1---I[A, p=1/3]
+    H--0---J[C, p=1/12]
+    H--1---K[D, p=1/12]
+```    
+24. Notice that this algorithm reached the same encoding that we had, providing no further improvement.
+25. To improve encodings, we can try to combine the pairs. Since we have 4 primitive choices (A,B,C,D), we'll end up with 16 pairs, where each pair has a new probability. For example, the AC pair has a probability of 1/36 (since that's the product of 1/3 * 1/12).
+26. With these new probabilities, we can arrive at the entropy of 1.646, which is significantly better.
+
 
 ## The Digital Abstraction
 
