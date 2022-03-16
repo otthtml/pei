@@ -72,7 +72,14 @@ graph TB;
 24. Notice that this algorithm reached the same encoding that we had, providing no further improvement.
 25. To improve encodings, we can try to combine the pairs. Since we have 4 primitive choices (A,B,C,D), we'll end up with 16 pairs, where each pair has a new probability. For example, the AC pair has a probability of 1/36 (since that's the product of 1/3 * 1/12).
 26. With these new probabilities, we can arrive at the entropy of 1.646, which is significantly better.
-
+27. Entering the realm of errors, we have an important concept called Hamming Distance.
+28. The Hamming Distance is given by the number of positions in which the corresponding digits differ in two encodings of the same length. E.g.: 100 and 101 has a distance of 1. Or 111 and 100 has a distance of 2.
+29. Single bit errors always have a Hamming Distance of 1 when compared to the original encoding.
+30. Simple encodings (1 bit encodings) are terrible in this aspect. A small, single-bit error can change the value entirely. 
+31. To improve our error detection, a parity bit is introduced in order to make the number of '1' bits even (if it's odd).
+32. E.g: 0 for heads and 1 for tails is now 00 for heads and 11 for tails. Notice how the single-bit errors of these encodings have an odd number of '1' bits (10 or 01). Also note that this only works if there is an odd number of single-bit errors.
+33. In general, to detect multi-bit E errors, we need a minimum Hamming Distance of E+1 between code words. E.g: For HD = 2, 00 = heads and 11 = tails detects 1 bit errors. For HD = 3, 000 = heads and 111 = tails detects 2 bit errors.
+34. Additionally, multi-bit E errors can be corrected with a 2E + 1 encoding. E.g: HD(000, 111) = 3, when applying a 1-bit error gives us 100, 010, 001 which is a 000 and 011, 101, 110 which is a 111.
 
 ## The Digital Abstraction
 
