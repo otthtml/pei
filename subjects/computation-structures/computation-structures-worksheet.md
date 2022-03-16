@@ -23,12 +23,12 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
     - [ ] log<sub>2</sub>(2/3)  
     - [ ] log<sub>2</sub>(3/8)  
 
-3. A random variable X represents the outcome of flipping an unfair coin, where p(HEADS) = 0.6. Please give the value for the entropy H(X)
-    - [ ] (3/5)*log<sub>2</sub>(5/3) + (2/5)*log<sub>2</sub>(5/2)  
-    - [ ] (5/3)*log<sub>2</sub>(5/3) + (5/2)*log<sub>2</sub>(5/2)  
-    - [ ] (3/5)*log<sub>2</sub>(2/5) + (2/5)*log<sub>2</sub>(3/5)  
-    - [ ] (3/5)*log<sub>2</sub>(3/5) + (2/5)*log<sub>2</sub>(2/5)  
-    - [ ] (5/3)*log<sub>2</sub>(3/5) + (5/2)*log<sub>2</sub>(2/5)  
+3. A random variable X represents the outcome of flipping an unfair coin, where p(HEADS) = 0.6. Please give the value for the entropy H(X).
+    - [ ] 0.97 bits
+    - [ ] 0.96 bits  
+    - [ ] 0.98 bits 
+    - [ ] 0.99 bits  
+    - [ ] 0.95 bits 
 
 ## The Digital Abstraction
 
