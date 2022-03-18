@@ -44,7 +44,12 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
     - [ ] 3 bits
     - [ ] 7 bits
 
-6. We wish to transmit messages comprised of the four symbols shown below with their associated probabilities and 5-bit fixed-length encoding.
+6. We wish to transmit messages comprised of the four symbols shown below with their associated probabilities and 5-bit fixed-length encoding. An unknown symbol is received and you are told it’s not delta. How much information have you received?
+    - [ ] log<sub>2</sub>(8/7)
+    - [ ] log<sub>2</sub>(8/5)
+    - [ ] log<sub>2</sub>(4)
+    - [ ] log<sub>2</sub>(4/3)
+    - [ ] log<sub>2</sub>(5/4)
 
 | Symbol | p(symbol) | encoding |
 |--------|-----------|----------|
@@ -53,9 +58,6 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 | gamma  | 0.25      | 11011    |
 | delta  | 0.125     | 10111    |
 
-An unknown symbol is received and you are told it’s not δ. How much information have you received?
-    - [ ] oi
-    - [ ] dois
 
 ## The Digital Abstraction
 
