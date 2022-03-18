@@ -24,20 +24,20 @@ Key questions:
 8. Encodings: unambiguous mapping between bit strings and a set of possible data. Similar to the thing we did with the card suits. There's variable-length encoding and fixed-length encoding.
 9. You can use tables to represent encoding, such as:  
 
-        | A  | B  | C  | D  |
-        |----|----|----|----|
-        | 00 | 01 | 10 | 11 |
+    | A  | B  | C  | D  |
+    |----|----|----|----|
+    | 00 | 01 | 10 | 11 |
 
 9. You can also use binary trees to represent encoding:
-```mermaid
-graph TB;
-    A[ ]--0---B[ ]
-    A--1---C[ ];
-    B--0---E(A)
-    B--1---F(B)
-    C--0---H(C)
-    C--1---I(D)
-```
+    ```mermaid
+    graph TB;
+        A[ ]--0---B[ ]
+        A--1---C[ ];
+        B--0---E(A)
+        B--1---F(B)
+        C--0---H(C)
+        C--1---I(D)
+    ```
 10.  If all choices are equally likely, then a fixed-length encoding is often used. This encoding generates a perfect binary tree, where all leaves are the same distance from the root (like the example above).
 11.  In such case, since **p<sub>i</sub> = 1/N** (where N is the number of choices), entropy is defined as **sum(1/N * log<sub>2</sub>(1/(1/N)))**, which is just **log<sub>2</sub>N**.
 12.  Say we want to encode the numbers 0 through 9. That's 10 possible choices. The entropy says that we need log<sub>2</sub>10 to encode it. That is 3.32 bits, rounding up to 4 bits, which is correct! 9 is represented as 1001 in binary. Note that we need 4 bits minimum, but 4 bits can represent up to 16 values (2<sup>4</sup>)
@@ -50,12 +50,12 @@ graph TB;
 19.  Encodings such as the hexadecimal allow us to compress data, effectively reducing space consumption (but increasing time consumption in the encoding and decoding process).
 20.  Variable-length encodings are used when probabilities are irregular. In such cases, low information represent high probabilities and vice-versa, according to Shannon's law (item 3). For instance:  
 
-        | choice | p    | encoding |
-        |--------|------|----------|
-        | A      | 1/3  | 11       |
-        | B      | 1/2  | 0        |
-        | C      | 1/12 | 100      |
-        | D      | 1/12 | 101      |
+    | choice | p    | encoding |
+    |--------|------|----------|
+    | A      | 1/3  | 11       |
+    | B      | 1/2  | 0        |
+    | C      | 1/12 | 100      |
+    | D      | 1/12 | 101      |
 
 21. The encoding above has an expected length of 1.667, which is more efficient than a fixed-length encoding in this case (which would have an entropy of 2).
 22. Note that the expected length is 1.667, but given the probabilities, the entropy (lower bound) is 1.626. So there must be another encoding that's more efficient.
