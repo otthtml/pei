@@ -30,5 +30,12 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
     - [ ] 0.99 bits  
     - [ ] 0.95 bits 
 
+4. A single decimal digit is chosen at random and you’re told that its value is 0 mod 3. How much information have you learned about the digit?
+    - [ ] log<sub>2</sub>(10/4) 
+    - [ ] log<sub>2</sub>(1) 
+    - [ ] log<sub>2</sub>(1/4) 
+    - [ ] log<sub>2</sub>(10) 
+    - [ ] log<sub>2</sub>(3) 
+
 ## The Digital Abstraction
 
