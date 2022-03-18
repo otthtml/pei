@@ -37,5 +37,12 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
     - [ ] log<sub>2</sub>(10) 
     - [ ] log<sub>2</sub>(3) 
 
+5. X is an unknown 8-bit binary number. You are given another 8-bit binary number, 10101100, and told that the Hamming distance between X and 10101100 is one. How many bits of information about X have you been given?
+    - [ ] 5 bits
+    - [ ] 4 bits 
+    - [ ] 6 bits
+    - [ ] 3 bits  
+    - [ ] 7 bits
+
 ## The Digital Abstraction
 
