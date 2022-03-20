@@ -65,5 +65,13 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 - [ ] 1.25 bits
 - [ ] 2.25 bits
 
+**{8}** You are given an unknown 5-bit binary number. You are then told that the first and last 
+bits are the same. How much information have you been given?
+- [ ] 1 bit
+- [ ] 1.5 bits
+- [ ] 2 bits
+- [ ] 1.25 bits
+- [ ] 2.25 bits
+
 ## The Digital Abstraction
 
