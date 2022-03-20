@@ -10,18 +10,18 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 ## Basics of Information
 
 **{1}** You are given an unknown 3-bit binary number. You are then told that the binary representation contains exactly two 1’s. How much information have you been given?   
-- [ ] log<sub>2</sub>(8/3)
-- [ ] 8
-- [ ] log<sub>2</sub>3
-- [ ] log<sub>2</sub>(2/8)
-- [ ] log<sub>2</sub>(3/8)
+- [ ] log<sub>2</sub>(8/3) bits
+- [ ] 8 bits
+- [ ] log<sub>2</sub>3 bits
+- [ ] log<sub>2</sub>(2/8) bits
+- [ ] log<sub>2</sub>(3/8) bits
 
 **{2}** You are then given the additional information that the number is also odd. How much additional information have you been given? 
-- [ ] log<sub>2</sub>(3/2)
-- [ ] 3
-- [ ] log<sub>2</sub>3
-- [ ] log<sub>2</sub>(2/3)
-- [ ] log<sub>2</sub>(3/8)
+- [ ] log<sub>2</sub>(3/2) bits
+- [ ] 3 bits
+- [ ] log<sub>2</sub>3 bits
+- [ ] log<sub>2</sub>(2/3) bits
+- [ ] log<sub>2</sub>(3/8) bits
 
 **{3}** A random variable X represents the outcome of flipping an unfair coin, where p(HEADS) = 0.6. Please give the value for the entropy H(X).
 - [ ] 0.97 bits
@@ -31,11 +31,11 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 - [ ] 0.95 bits
 
 **{4}** A single decimal digit is chosen at random and you’re told that its value is 0 mod 3. How much information have you learned about the digit?
-- [ ] log<sub>2</sub>(10/4)
-- [ ] log<sub>2</sub>(1)
-- [ ] log<sub>2</sub>(1/4)
-- [ ] log<sub>2</sub>(10)
-- [ ] log<sub>2</sub>(3)
+- [ ] log<sub>2</sub>(10/4) bits
+- [ ] log<sub>2</sub>(1) bits
+- [ ] log<sub>2</sub>(1/4) bits
+- [ ] log<sub>2</sub>(10) bits
+- [ ] log<sub>2</sub>(3) bits
 
 **{5}** X is an unknown 8-bit binary number. You are given another 8-bit binary number, 10101100, and told that the Hamming distance between X and 10101100 is one. How many bits of information about X have you been given?
 - [ ] 5 bits
@@ -45,11 +45,11 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 - [ ] 7 bits
 
 **{6}** We wish to transmit messages comprised of the four symbols shown below with their associated probabilities and 5-bit fixed-length encoding. An unknown symbol is received and you are told it’s not delta. How much information have you received?
-- [ ] log<sub>2</sub>(8/7)
-- [ ] log<sub>2</sub>(8/5)
-- [ ] log<sub>2</sub>(4)
-- [ ] log<sub>2</sub>(4/3)
-- [ ] log<sub>2</sub>(5/4)
+- [ ] log<sub>2</sub>(8/7) bits
+- [ ] log<sub>2</sub>(8/5) bits
+- [ ] log<sub>2</sub>(4) bits
+- [ ] log<sub>2</sub>(4/3) bits
+- [ ] log<sub>2</sub>(5/4) bits
 
 | Symbol | p(symbol) | encoding |
 |--------|-----------|----------|
@@ -65,12 +65,18 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 - [ ] 1.25 bits
 - [ ] 2.25 bits
 
-**{8}** You are given an unknown 5-bit binary number. You are then told that the first and last 
-bits are the same. How much information have you been given?
+**{8}** You are given an unknown 5-bit binary number. You are then told that the first and last bits are the same. How much information have you been given?
 - [ ] 1 bit
 - [ ] 1.5 bits
 - [ ] 2 bits
 - [ ] 1.25 bits
+- [ ] 2.25 bits
+
+**{9}** I've randomly selected a letter from the alphabet and tell you that my selection is neither "X", "Y", nor "Z". How much information have I given you about my letter?
+- [ ] log<sub>2</sub>(26/23) bits
+- [ ] 3 bits
+- [ ] 1 bit
+- [ ] log<sub>2</sub>(32/29) bits
 - [ ] 2.25 bits
 
 ## The Digital Abstraction
