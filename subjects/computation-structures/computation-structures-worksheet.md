@@ -79,5 +79,19 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 - [ ] log<sub>2</sub>(32/29) bits
 - [ ] 2.25 bits
 
+**{10}** I make up a random 4-bit two’s complement number by flipping a fair coin to determine each bit. You’re trying to guess the number. If I tell you that the number is positive (> 0), how many bits of information have I given you?
+- [ ] log<sub>2</sub>(16/7) bits
+- [ ] 3 bits
+- [ ] 1 bit
+- [ ] log<sub>2</sub>(32/29) bits
+- [ ] 2.25 bits
+
+**{11}** What is the 6-bit two’s complement representation of the decimal number -21?
+- [ ] 101011
+- [ ] 110101
+- [ ] 100100
+- [ ] 100101
+- [ ] 100111
+
 ## The Digital Abstraction
 
