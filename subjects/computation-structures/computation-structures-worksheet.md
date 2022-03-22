@@ -93,12 +93,19 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 - [ ] 100101
 - [ ] 100111
 
-**{11}** What is the hexadecimal representation for decimal -51 encoded as an 8-bit two’s complement number? ? 00110011 -> 11001101
+**{12}** What is the hexadecimal representation for decimal -51 encoded as an 8-bit two’s complement number?
 - [ ] 0xCD
 - [ ] 0xCC
 - [ ] 0xDD
 - [ ] 0xCA
 - [ ] 0xDA
+
+**{13}** The hexadecimal representation for an 8-bit two’s complement number is 0xD6. What is its decimal representation?
+- [ ] -42
+- [ ] -41
+- [ ] -43
+- [ ] -40
+- [ ] -44
 
 ## The Digital Abstraction
 
