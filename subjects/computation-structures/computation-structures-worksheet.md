@@ -128,5 +128,13 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 - [ ] 0xFC
 - [ ] 0xE8
 
+**{17}** Please compute the value of the expression 0xBB – 8 using 8-bit two’s complement arithmetic and give the result in decimal (base 10). 
+- [ ] -77 
+- [ ] -76
+- [ ] -78
+- [ ] -75
+- [ ] -79
+- [ ] -74
+
 ## The Digital Abstraction
 
