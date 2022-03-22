@@ -107,12 +107,19 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 - [ ] -40
 - [ ] -44
 
-**{14}**  Since the start of official pitching statistics in 1988, the highest number of pitches in a single game has been 172. Assuming that remains the upper bound on pitch count, how many bits would we need to record the pitch count for each game as a two’s complement binary number?
+**{14}** Since the start of official pitching statistics in 1988, the highest number of pitches in a single game has been 172. Assuming that remains the upper bound on pitch count, how many bits would we need to record the pitch count for each game as a two’s complement binary number?
 - [ ] 9 bits
 - [ ] 8 bits
 - [ ] 10 bits
 - [ ] 7 bits
 - [ ] 11 bits
+
+**{15}** What is the sum of two 2’s complement numbers 0xB3 + 0x47 using an 8-bit 2’s complement representation? Please encode the result using hex. 
+- [ ] 0xFA
+- [ ] 0xFB
+- [ ] 0xE9
+- [ ] 0xFC
+- [ ] 0xE8
 
 ## The Digital Abstraction
 
