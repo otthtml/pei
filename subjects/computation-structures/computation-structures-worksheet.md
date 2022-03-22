@@ -119,6 +119,13 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 - [ ] 0xFB
 - [ ] 0xE9
 - [ ] 0xFC
+- [ ] Bit overflow
+
+**{16}** What is the sum of two 2’s complement numbers 0xB3 + 0xB1 using an 8-bit 2’s complement representation? Please encode the result using hex. 
+- [ ] Bit overflow
+- [ ] 0xFB
+- [ ] 0xE9
+- [ ] 0xFC
 - [ ] 0xE8
 
 ## The Digital Abstraction
