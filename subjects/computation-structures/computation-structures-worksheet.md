@@ -107,5 +107,12 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 - [ ] -40
 - [ ] -44
 
+**{14}**  Since the start of official pitching statistics in 1988, the highest number of pitches in a single game has been 172. Assuming that remains the upper bound on pitch count, how many bits would we need to record the pitch count for each game as a two’s complement binary number?
+- [ ] 9 bits
+- [ ] 8 bits
+- [ ] 10 bits
+- [ ] 7 bits
+- [ ] 11 bits
+
 ## The Digital Abstraction
 
