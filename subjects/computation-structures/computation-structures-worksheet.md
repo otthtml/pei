@@ -134,7 +134,6 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 - [ ] -78
 - [ ] -75
 - [ ] -79
-- [ ] -74
 
 **{18}** What is the smallest (most negative) integer that can be represented as an 8-bit two’s complement integer? Give your answer as a decimal integer.
 - [ ] -128
@@ -142,7 +141,20 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 - [ ] -256
 - [ ] -32
 - [ ] -512
-- [ ] -16
+
+**{19}** In hexadecimal, using a 8-bit adder with 2's complement encoding, how much is 0xF0 + 0x34? 
+- [ ] 0x24
+- [ ] 0x92
+- [ ] 0x23
+- [ ] 0x91
+- [ ] 0x93
+
+**{20}** In hexadecimal, using a 8-bit adder with 2's complement encoding, how much is 0xF0 + 0x80? 
+- [ ] 0x70
+- [ ] 0xB8
+- [ ] 0x71
+- [ ] 0xB9
+- [ ] 0x72
 
 ## The Digital Abstraction
 
