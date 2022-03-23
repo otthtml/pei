@@ -136,5 +136,13 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 - [ ] -79
 - [ ] -74
 
+**{18}** What is the smallest (most negative) integer that can be represented as an 8-bit two’s complement integer? Give your answer as a decimal integer.
+- [ ] -128
+- [ ] -64
+- [ ] -256
+- [ ] -32
+- [ ] -512
+- [ ] -16
+
 ## The Digital Abstraction
 
