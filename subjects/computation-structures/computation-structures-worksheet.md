@@ -163,6 +163,13 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 - [ ] -32 to 32
 - [ ] 0 to 32
 
+**{22}** Using two's complement and 5 bits, how much is 10101 - 00011? Compute the result and give the answer as a decimal (base 10) number. 
+- [ ] -14
+- [ ] -7
+- [ ] -16
+- [ ] 8
+- [ ] -8
+
 
 ## The Digital Abstraction
 
