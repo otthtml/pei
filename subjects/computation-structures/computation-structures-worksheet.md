@@ -156,5 +156,13 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 - [ ] 0xB9
 - [ ] 0x72
 
+**{21}** Using a 5-bit two’s complement representation, what is the range of integers that can be represented with a single 5-bit quantity? 
+- [ ] -16 to 15
+- [ ] -16 to 16
+- [ ] -32 to 31
+- [ ] -32 to 32
+- [ ] 0 to 32
+
+
 ## The Digital Abstraction
 
