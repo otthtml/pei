@@ -170,6 +170,21 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 - [ ] 8
 - [ ] -8
 
+**{23}** Given a variable X that can take on one of four values A, B, C, or D with the following probabilities. 
+
+| Symbol | Probability |
+|--------|-------------|
+| A      | 0.5         |
+| B      | 0.3         |
+| C      | 0.1         |
+| D      | 0.1         |
+
+If you encoded this variable using a Huffman encoding, how many bits would be in the encoding of each of the symbols? 
+- [ ] A = 1, B = 2, C = 3, D = 3 
+- [ ] A = 1, B = 2, C = 4, D = 4
+- [ ] A = 1, B = 2, C = 2, D = 2
+- [ ] A = 1, B = 3, C = 4, D = 4
+- [ ] A = 1, B = 2, C = 5, D = 5
 
 ## The Digital Abstraction
 
