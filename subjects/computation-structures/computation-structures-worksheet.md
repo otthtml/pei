@@ -186,5 +186,10 @@ If you encoded this variable using a Huffman encoding, how many bits would be in
 - [ ] A = 1, B = 3, C = 4, D = 4
 - [ ] A = 1, B = 2, C = 5, D = 5
 
+**{24}** Which tree does the following probability distribution describe?
+`p(A) = 0.3, p(B) = 0.3, p(C) = 0.2, p(D) = 0.1, p(E) = 0.1`
+
+
+
 ## The Digital Abstraction
 
