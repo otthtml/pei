@@ -189,11 +189,27 @@ If you encoded this variable using a Huffman encoding, how many bits would be in
 **{24}** Which tree does the following probability distribution describe?
 `p(A) = 0.3, p(B) = 0.3, p(C) = 0.2, p(D) = 0.1, p(E) = 0.1`
 ![tree choices](trees.png)
-
 - [ ] Tree 2
 - [ ] Tree 1
 - [ ] Tree 3
 
+**{25}** Given the same trees, which one describes the following probability distribution?
+`p(A) = 0.6, p(B) = 0.1, p(C) = 0.1, p(D) = 0.1, p(E) = 0.1`
+- [ ] Tree 3
+- [ ] Tree 2
+- [ ] Tree 1
+
+**{26}** Given the same trees, which one describes the following probability distribution?
+`p(A) = 0.5, p(B) = 0.15, p(C) = 0.15, p(D) = 0.1, p(E) = 0.1`
+- [ ] Tree 3       
+- [ ] Tree 2
+- [ ] Tree 1
+
+**{27}** Given the same trees, which one describes the following probability distribution?
+` p(A) = 0.5, p(B) = 0.2, p(C) = 0.15, p(D) = 0.05, p(E) = 0.1`
+- [ ] Tree 1
+- [ ] Tree 3       
+- [ ] Tree 2
 
 ## The Digital Abstraction
 
