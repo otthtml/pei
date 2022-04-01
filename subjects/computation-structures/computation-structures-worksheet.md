@@ -186,7 +186,7 @@ If you encoded this variable using a Huffman encoding, how many bits would be in
 - [ ] A = 1, B = 3, C = 4, D = 4
 - [ ] A = 1, B = 2, C = 5, D = 5
 
-**{24}** Which tree does the following probability distribution describe?
+**{24}** Which of the following trees describes the following probability distribution?
 `p(A) = 0.3, p(B) = 0.3, p(C) = 0.2, p(D) = 0.1, p(E) = 0.1`
 ![tree choices](trees.png)
 - [ ] Tree 2
@@ -210,6 +210,28 @@ If you encoded this variable using a Huffman encoding, how many bits would be in
 - [ ] Tree 1
 - [ ] Tree 3       
 - [ ] Tree 2
+
+**{28}** The table below shows some fun baseball probabilities (from 2014). How much information have you received when learning that particular pitch was NOT a fastball?
+
+| Type of pitch | Probability |
+| --------------|-------------|
+| Fastball      | 0.34        |
+| Change-up     | 0.14        |
+| Curveball     | 0.08        |
+| Slider        | 0.28        |  
+| Other         | 0.16        |
+- [ ] log<sub>2</sub>(1/0.66) 
+- [ ] log<sub>2</sub>(0.66) 
+- [ ] 0.66 * log<sub>2</sub>(0.66) 
+- [ ] log<sub>2</sub>(0.34) 
+- [ ] 0.34 * log<sub>2</sub>(1/0.34) 
+
+**{29}** Using Huffman's algorithm, what's the most efficient variable length encoding for the table above?
+- [ ] CB = 000, CU = 001, O = 01, S = 10, FB = 11
+- [ ] CB = 0, CU = 1, O = 10, S = 11, FB = 100
+- [ ] CB = 100, CU = 11, O = 10, S = 1, FB = 0
+- [ ] CB = 00, CU = 01, O = 010, S = 011, FB = 100
+- [ ] CB = 00, CU = 01, O = 010, S = 011, FB = 111
 
 ## The Digital Abstraction
 
