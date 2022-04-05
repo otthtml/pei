@@ -233,5 +233,60 @@ If you encoded this variable using a Huffman encoding, how many bits would be in
 - [ ] CB = 00, CU = 01, O = 010, S = 011, FB = 100
 - [ ] CB = 00, CU = 01, O = 010, S = 011, FB = 111
 
+**{30}** The table below shows the 2012-13 enrollments in the various EECS majors. To save a bit of space in their database the department would like to use a variable-length Huffman code to encode a student’s choice of major. Choose the best encoding for each major.
+| Major | Count | p    | p*log<sub>2</sub>(1/p) |
+|-------|-------|------|------------------------|
+| 6-1   | 74    | 0.09 | 0.30                   |
+| 6-2   | 387   | 0.44 | 0.52                   |
+| 6-3   | 360   | 0.41 | 0.053                  |
+| 6-7   | 54    | 0.06 | 0.25                   |
+| Total | 875   | 1.00 | 1.60                   |
+- [ ] 6-1 = 001, 6-2 = 1, 6-3 = 01, 6-7 = 000
+- [ ] 6-1 = 000, 6-2 = 001, 6-3 = 01, 6-7 = 10
+- [ ] 6-1 = 0, 6-2 = 1, 6-3 = 10, 6-7 = 11
+- [ ] 6-1 = 10, 6-2 = 11, 6-3 = 01, 6-7 = 1
+- [ ] 6-1 = 11, 6-2 = 001, 6-3 = 01, 6-7 = 10
+
+**{{31}}** We wish to transmit messages comprised of the four symbols shown below with their associated probabilities and 5-bit fixed-length encoding.
+| Symbol | p(symbol) | encoding |
+|--------|-----------|----------|
+| α      | 0.5       | 00000    |
+| β      | 0.125     | 11100    |
+| γ      | 0.25      | 11011    |
+| δ      | 0.125     | 10111    |
+Huffman’s algorithm is used to construct a variable-length code for the four symbols for transmitting a single symbol at a time. The resulting encoding could be:
+- [ ] None of the above.
+- [ ] α: 0, β: 110, γ: 01, δ: 111 
+- [ ] α: 00, β: 01, γ: 10, δ: 10 
+- [ ] α: 00, β: 01, γ: 100, δ: 101 
+- [ ] α: 1, β: 01, γ: 000, δ: 001
+
+**{{32}}** Five messages, and their relative probabilities, are listed below: 
+| id | Message                         | p   |
+|----|---------------------------------|-----|
+| M1 | Send money!                     | 60% |
+| M2 | I love this course called 6.004 | 8%  |
+| M3 | I’m changing my major to Poetry | 2%  |
+| M4 | I’m getting a 5.0 this term     | 1%  |
+| M5 | Nothing much is new…            | 29% |
+What is the average number of bits needed to convey a message, using a fixed-length code?
+- [ ] 3 bits.
+- [ ] 4 bits.
+- [ ] 2 bits.
+- [ ] 2.5 bits.
+- [ ] 4.5 bits.
+
+**{{33}}** Given the probability distribution of the messages, what is the actual amount of information conveyed by message M5? Your answer may be a formula. 
+- [ ] I(M5) = log<sub>2</sub>(1/0.29)
+- [ ] I(M5) = log<sub>2</sub>(1/29)
+- [ ] I(M5) = log<sub>2</sub>(0.29)
+- [ ] I(M5) = log<sub>2</sub>(29)
+- [ ] I(M5) = 29 log<sub>2</sub>(0.29)
+
+**{{34}}** To enable error correction, the fixed-length code for a given message is sent five times. Using the five copies of the received message, in the worst case how many bit errors can be corrected at the receiver?
+
+**{{35}}** Give the number of bits sent by your Huffman code for each message (M1 though M5), and the average number of bits transmitted per message using your code (a formula will be fine).
+
+
 ## The Digital Abstraction
 
