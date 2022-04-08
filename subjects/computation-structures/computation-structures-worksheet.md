@@ -297,6 +297,18 @@ What is the average number of bits needed to convey a message, using a fixed-len
 - M1 = 1, M5 = 01, M2 = 001, M3 = 0001, M4 = 1000. Average = 1.5 bits.
 - M1 = 0, M5 = 01, M2 = 001, M3 = 0001, M4 = 0000. Average = 1.54 bits.
 
+**{{36}}** A message about the suit of a card is sent using the encoding shown below. Using this encoding, how many bit errors can be detected? How many bit errors can be corrected?
+| Suit     | encoding |
+|----------|----------|
+| Club:    | 000      |
+| Diamond: | 011      |
+| Heart:   | 101      |
+| Spade:   | 110      |
+- Detection = 1 bit. Correction = 0 bits.
+- Detection = 1 bit. Correction = 1 bits.
+- Detection = 2 bit. Correction = 1 bits.
+- Detection = 2 bit. Correction = 3 bits.
+- Detection = 3 bit. Correction = 2 bits.
 
 
 ## The Digital Abstraction

@@ -80,7 +80,7 @@ graph TB;
 **{33}** E.g: 0 for heads and 1 for tails is now 00 for heads and 11 for tails. Notice how the single-bit errors of these encodings have an odd number of '1' bits (10 or 01). Also note that this only works if there is an odd number of single-bit errors.  
 **{34}** In general, to detect multi-bit E errors, we need a minimum Hamming Distance of ***E+1*** between code words. E.g: For HD = 2, 00 = heads and 11 = tails detects 1 bit errors. For HD = 3, 000 = heads and 111 = tails detects 2 bit errors.  
 **{35}** Additionally, multi-bit E errors can be corrected with a ***2E + 1*** encoding. 
-**{36}** E.g: Given 000 is tails and 111 is head, we have an encoding with a HD of 3. Using the formula, we have 3 = E + 1, which enables this encoding to detect 2 bit errors. Additionally, this encoding enables us to correct 1 bit errors (3 = 2E + 1).
+**{36}** E.g: Given 000 is tails and 111 is head, we have an encoding with a min HD of 3 between words. Using the formula, we have 3 = E + 1, which enables this encoding to detect 2 bit errors. Additionally, this encoding enables us to correct 1 bit errors (3 = 2E + 1).
 
 ## The Digital Abstraction
 
