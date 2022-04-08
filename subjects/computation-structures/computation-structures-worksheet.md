@@ -283,9 +283,20 @@ What is the average number of bits needed to convey a message, using a fixed-len
 - [ ] I(M5) = log<sub>2</sub>(29)
 - [ ] I(M5) = 29 log<sub>2</sub>(0.29)
 
-**{{34}}** To enable error correction, the fixed-length code for a given message is sent five times. Using the five copies of the received message, in the worst case how many bit errors can be corrected at the receiver?
+**{{34}}** To enable error correction, the fixed-length code (3 bits) for a given message is sent five times. Using the five copies of the received message, in the worst case how many bit errors can be corrected at the receiver?
+- 2
+- 1
+- 5
+- 3
+- 4
 
 **{{35}}** Give the number of bits sent by your Huffman code for each message (M1 though M5), and the average number of bits transmitted per message using your code (a formula will be fine).
+- M1 = 1, M5 = 01, M2 = 001, M3 = 0001, M4 = 0000. Average = 1.54 bits.
+- M1 = 1, M5 = 0, M2 = 10, M3 = 11, M4 = 00. Average = 1.5 bits.
+- M1 = 0, M5 = 01, M2 = 001, M3 = 0001, M4 = 0000. Average = 1.5 bits.
+- M1 = 1, M5 = 01, M2 = 001, M3 = 0001, M4 = 1000. Average = 1.5 bits.
+- M1 = 0, M5 = 01, M2 = 001, M3 = 0001, M4 = 0000. Average = 1.54 bits.
+
 
 
 ## The Digital Abstraction

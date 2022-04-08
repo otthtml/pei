@@ -19,7 +19,7 @@ Key questions:
 **{3}** In 1948, Claude Shannon tried to quantify information as ***I(x<sub>i</sub>) = log<sub>2</sub>(1/p<sub>i</sub>)***.  x<sub>i</sub> has a probability of p<sub>i</sub> of occurring. In other words, the lower the probability, the higher the information gained.  
 **{4}** As an example, learning that a random deck card is a heart gives us: ***I(heart) = log<sub>2</sub>(1/(13/52))***, which is equal to 2 bits.  
 **{5}** Another way to look at this is: how can we encode the heart value? We have 4 possible values (each card suit), so the simplest way is to encode is to assign 00 to Diamonds, 01 to Clubs, 10 to Hearts and 11 to Spades.  
-**{6}** Similarly, the entropy H(x) is the average amount of information contained in each piece of data received about the value x. That is, ***H(x) = sum(p<sub>i</sub> * I(x<sub>i</sub>))***.  
+**{6}** Similarly, the entropy H(x) is the average amount of information contained in each piece of data received about the value x. That is, ***H(x) = sum(p<sub>i</sub> * I(x<sub>i</sub>))***. If we already have the number of bits each message can contain, the average becomes ***sum(p<sub>i</sub> * bits<sub>i</sub>)***.
 **{7}** In this case, entropy is a guideline. In a sequence of data about certain values, we need to be as close as possible to entropy. If the bits used are lower, we won't be describing it properly. If the bits used are higher, we're being inefficient.  
 **{8}** Encodings: unambiguous mapping between bit strings and a set of possible data. Similar to the thing we did with the card suits. There's variable-length encoding and fixed-length encoding.  
 **{9}** You can use tables to represent encoding, such as:  
@@ -79,7 +79,8 @@ graph TB;
 **{32}** To improve our error detection, a parity bit is introduced in order to make the number of '1' bits even (if it's odd).  
 **{33}** E.g: 0 for heads and 1 for tails is now 00 for heads and 11 for tails. Notice how the single-bit errors of these encodings have an odd number of '1' bits (10 or 01). Also note that this only works if there is an odd number of single-bit errors.  
 **{34}** In general, to detect multi-bit E errors, we need a minimum Hamming Distance of ***E+1*** between code words. E.g: For HD = 2, 00 = heads and 11 = tails detects 1 bit errors. For HD = 3, 000 = heads and 111 = tails detects 2 bit errors.  
-**{35}** Additionally, multi-bit E errors can be corrected with a ***2E + 1*** encoding. E.g: HD(000, 111) = 3, when applying a 1-bit error gives us 100, 010, 001 which is a 000 and 011, 101, 110 which is a 111.  
+**{35}** Additionally, multi-bit E errors can be corrected with a ***2E + 1*** encoding. 
+**{36}** E.g: Given 000 is tails and 111 is head, we have an encoding with a HD of 3. Using the formula, we have 3 = E + 1, which enables this encoding to detect 2 bit errors. Additionally, this encoding enables us to correct 1 bit errors (3 = 2E + 1).
 
 ## The Digital Abstraction
 
