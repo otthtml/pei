@@ -310,6 +310,40 @@ What is the average number of bits needed to convey a message, using a fixed-len
 - Detection = 2 bit. Correction = 3 bits.
 - Detection = 3 bit. Correction = 2 bits.
 
+**{{37}}** A message about the suit of a card is sent using the encoding shown below. Knowing that all messages below have a single bit error, which message is uncorrectable?
+| Suit     | Encoding |
+|----------|----------|
+| Heart:   | 00000    |
+| Diamond: | 11001    |
+| Spade:   | 10111    |
+| Club:    | 01011    |
+- 11011
+- 00001
+- 11111
+- 11000
+- 10100
+
+**{{38}}** Given the following encoding for the umpire's call, what's the largest number of bit errors that can be detected when examining a particular message?
+| Call   | Code  |
+|--------|-------|
+| Strike | 11111 |
+| Ball   | 01101 |
+| Other  | 00000 |
+| Club:  | 01011 |
+- 1 bit detection
+- 2 bit detection
+- 3 bit detection
+- 0 bit detection
+- 4 bit detection
+
+**{{39}}** And what's the largest number of bits that can be corrected?
+- 0 bit detection
+- 1 bit detection
+- 2 bit detection
+- 3 bit detection
+- 4 bit detection
+
+
 
 ## The Digital Abstraction
 
