@@ -330,18 +330,32 @@ What is the average number of bits needed to convey a message, using a fixed-len
 | Ball   | 01101 |
 | Other  | 00000 |
 | Club:  | 01011 |
-- 1 bit detection
-- 2 bit detection
-- 3 bit detection
-- 0 bit detection
-- 4 bit detection
+- 1 bit detected
+- 2 bit detected
+- 3 bit detected
+- 0 bit detected
+- 4 bit detected
 
 **{{39}}** And what's the largest number of bits that can be corrected?
-- 0 bit detection
-- 1 bit detection
-- 2 bit detection
-- 3 bit detection
-- 4 bit detection
+- 0 bit corrected
+- 1 bit corrected
+- 2 bit corrected
+- 3 bit corrected
+- 4 bit corrected
+
+**{{40}}** We wish to transmit messages comprised of the four symbols shown below with their associated probabilities and 5-bit fixed-length encoding
+| Symbol | p(symbol) | encoding |
+|--------|-----------|----------|
+| α      | 0.5       | 00000    |
+| β      | 0.125     | 11100    |
+| γ      | 0.25      | 11011    |
+| δ      | 0.125     | 10111    |
+If we transmit messages using the 5-bit fixed-length encoding shown above, how many incorrect bits can be detected and how many can be corrected?
+- 1 detected, 0 corrected
+- 2 detected, 1 corrected
+- 3 detected, 2 corrected
+- 4 detected, 3 corrected
+- 5 detected, 4 corrected
 
 
 
