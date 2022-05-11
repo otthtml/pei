@@ -357,6 +357,14 @@ If we transmit messages using the 5-bit fixed-length encoding shown above, how m
 - 4 detected, 3 corrected
 - 5 detected, 4 corrected
 
+**{{41}}** What is the Hamming distance between the encodings for A and B? How many bits of error can be detected? How many bits of error can be corrected?  
+A: 010010  
+B: 110101  
+- MHD = 4, 3 bit errors can be detected, 1 bit errors can be corrected
+- MHD = 4, 2 bit errors can be detected, 1 bit errors can be corrected
+- MHD = 4, 3 bit errors can be detected, 2 bit errors can be corrected
+- MHD = 4, 4 bit errors can be detected, 3 bit errors can be corrected
+- MHD = 4, 4 bit errors can be detected, 2 bit errors can be corrected
 
 
 ## The Digital Abstraction
