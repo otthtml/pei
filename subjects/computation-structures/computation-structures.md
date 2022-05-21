@@ -5,6 +5,7 @@ This subject is based on https://ocw.mit.edu/courses/electrical-engineering-and-
 ## Table of contents
 [Basics of Information](#basics-of-information)  
 [The Digital Abstraction](#the-digital-abstraction)  
+[CMOs](#cmos)
 
 
 ## Basics of Information
@@ -79,17 +80,24 @@ graph TB;
 **{32}** To improve our error detection, a parity bit is introduced in order to make the number of '1' bits even (if it's odd).  
 **{33}** E.g: 0 for heads and 1 for tails is now 00 for heads and 11 for tails. Notice how the single-bit errors of these encodings have an odd number of '1' bits (10 or 01). Also, note that this only works if there is an odd number of single-bit errors.  
 **{34}** In general, to detect multi-bit E errors, we need a minimum Hamming Distance of ***E+1*** between code words. E.g: For HD = 2, 00 = heads and 11 = tails detects 1 bit errors. For HD = 3, 000 = heads and 111 = tails detects 2 bit errors.  
-**{35}** Additionally, multi-bit E errors can be corrected with a ***2E + 1*** encoding. 
-**{36}** E.g: Given 000 is tails and 111 is head, we have an encoding with a min HD of 3 between words. Using the formula, we have 3 = E + 1, which enables this encoding to detect 2-bit errors. Additionally, this encoding enables us to correct 1 bit errors (3 = 2E + 1).
+**{35}** Additionally, multi-bit E errors can be corrected with a ***2E + 1*** encoding.  
+**{36}** E.g: Given 000 is tails and 111 is head, we have an encoding with a min HD of 3 between words. Using the formula, we have 3 = E + 1, which enables this encoding to detect 2-bit errors. Additionally, this encoding enables us to correct 1 bit errors (3 = 2E + 1).  
 
 ## The Digital Abstraction
 
 Key questions:
 - How do we represent bits?
+- Why do we need to know about VTC, static discipline and dynamic discipline?
 
 
-**{{37}}** We can use electrical phenomena to represent bits. The most common representation is through voltage, but the best choice depends on the application. Like everything in life, choosing to use voltage as a representative presents pros and cons. Pros: easy generation, detection, considerable engineering knowledge and low power in steady-state. Cons: lots of external interference.
-**{{38}}** Analog signals can be represented by the voltage. Since analog signals are continuous and our generation/detection capacities are discreet, so we end up defining ranges that classify the signal (information).
-**{{39}}** We can act upon these signals, copying or modifying their information. This is called "Information Processing" (aka Computation). Computation blocks are functions that can be composed to form more complex computation blocks. Since volts are almost directly representing analog signals, such computations are affected by external factors. This results in an error (epsilon) being added to each computation.
-**{{40}}** To tolerate some amount of error, the digital signal/abstraction was created, using real physical phenomena to implement digital designs. This is done by encoding one bit of information (0 or 1) and using this representation for every component and wire in our digital system. Voltages below V<sub>L</sub> are considered a 0, and voltages above V<sub>H</sub> are considered a 1. To provide even greater noise immunity, outputs can have stricter voltages than inputs, so that: V<sub>OL</sub> < V<sub>IL</sub> < V<sub>IH</sub> < V<sub>OHS</sub>. This gives us a noise margin (but still leaves a forbidden zone).
-**{{41}}** Using this digital abstraction makes building a combinational device possible. Such devices are defined as being able to take one or more digital inputs, run a function (functional specification) within a certain amount of time (timing specification) on said inputs and return one or more digital outputs. These 4 criteria are called the "Static discipline".
+**{{37}}** We can use electrical phenomena to represent bits. The most common representation is through voltage, but the best choice depends on the application. Like everything in life, choosing to use voltage as a representative presents pros and cons. Pros: easy generation, detection, considerable engineering knowledge and low power in steady-state. Cons: lots of external interference.  
+**{{38}}** Analog signals can be represented by the voltage. Since analog signals are continuous and our generation/detection capacities are discreet, so we end up defining ranges that classify the signal (information).  
+**{{39}}** We can act upon these signals, copying or modifying their information. This is called "Information Processing" (aka Computation). Computation blocks are functions that can be composed to form more complex computation blocks. Since volts are almost directly representing analog signals, such computations are affected by external factors. This results in an error (epsilon) being added to each computation.  
+**{{40}}** To tolerate some amount of error, the digital signal/abstraction was created, using real physical phenomena to implement digital designs. This is done by encoding one bit of information (0 or 1) and using this representation for every component and wire in our digital system. Voltages below V<sub>L</sub> are considered a 0, and voltages above V<sub>H</sub> are considered a 1. To provide even greater noise immunity, outputs can have stricter voltages than inputs, so that: $V_{OL} < V_{IL} < V_{IH} < V_{OH}$. This gives us a noise margin (but still leaves a forbidden zone).  
+**{{41}}** Using this digital abstraction makes building a combinational device possible. Such devices are defined as being able to take one or more digital inputs, run a function (functional specification) within a certain amount of time (timing specification) on said inputs and return one or more digital outputs. These 4 criteria are called the "Static discipline".  
+**{{42}}** A simple combinational device called "buffer" takes an input and outputs the same input within a certain amount of time (propagation delay). To ensure this combinational device obeys the static discipline, we can simply look at its Voltage Transfer Characteristic (VTC) graph and certify that $V_{OL} < V_{IL} < V_{IH} < V_{OH}$.  
+**{{43}}** Since $V_{OH} - V_{OL} > V_{IH} - V_{IL}$, the VTC ends up with a rectangular area in the middle of it where $V_I$ can go wild as long as $V_{IL} < V_I < V_{IH}$. However, once $V_I$ reaches $V_{IH}$, it must increase in a nonlinear way (because of the rectangular area). This means that our traditional linear devices (resistors, capacitors, etc.) aren't sufficient to build combinational devices. We'll explore combinational devices in the [CMOs](#cmos) section.
+**{{44}}** In short, a device can be called combinational if it satisfies the Static Discipline. To prove that this discipline is being satisfied, ensure that the VTC graph of the device follows $V_{OL} < V_{IL} < V_{IH} < V_{OH}$ and that valid inputs produce valid outputs.
+
+
+## CMOs
