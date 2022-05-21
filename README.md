@@ -35,8 +35,11 @@ Get a NFT diploma upon payment.
 
 $`H(x) = \sum_{i=1}^{n} p_{i} * log_{2}(1/p_{i})`$
 
-**This one works in Github**
-This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+
+**This one works in Github**  
+
+This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$  
+
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
 
