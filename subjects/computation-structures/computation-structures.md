@@ -97,7 +97,7 @@ Key questions:
 **{{41}}** Using this digital abstraction makes building a combinational device possible. Such devices are defined as being able to take one or more digital inputs, run a function (functional specification) within a certain amount of time (timing specification) on said inputs and return one or more digital outputs. These 4 criteria are called the "Static discipline".  
 **{{42}}** A simple combinational device called "buffer" takes an input and outputs the same input within a certain amount of time (propagation delay). To ensure this combinational device obeys the static discipline, we can simply look at its Voltage Transfer Characteristic (VTC) graph and certify that $V_{OL} < V_{IL} < V_{IH} < V_{OH}$.  
 **{{43}}** Since $V_{OH} - V_{OL} > V_{IH} - V_{IL}$, the VTC ends up with a rectangular area in the middle of it where $V_I$ can go wild as long as $V_{IL} < V_I < V_{IH}$. However, once $V_I$ reaches $V_{IH}$, it must increase in a nonlinear way (because of the rectangular area). This means that our traditional linear devices (resistors, capacitors, etc.) aren't sufficient to build combinational devices. We'll explore combinational devices in the [CMOs](#cmos) section.
-**{{44}}** In short, a device can be called combinational if it satisfies the Static Discipline. To prove that this discipline is being satisfied, ensure that the VTC graph of the device follows $V_{OL} < V_{IL} < V_{IH} < V_{OH}$ and that valid inputs produce valid outputs.
+**{{44}}** In short, a device can be called combinational if it satisfies the Static Discipline. To prove that this discipline is being satisfied, ensure that the VTC graph of the device follows $V_{OL} < V_{IL} < V_{IH} < V_{OH}$ and that valid inputs produce valid outputs.  
 
 
 ## CMOs
